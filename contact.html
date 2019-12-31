@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>contact</title>
-
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -18,11 +18,282 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Rouge+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 
-
 </head>
+
 <body>
-    
+
+
+
+
+
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-white">
+        <div class="container-fluid">
+
+
+
+            <div class="mr-auto order-0" class="d-flex align-items-stretch">
+
+                <ul>
+
+
+                    <li id="nameswitch" style="color:white"><a class="name" href="#name">Matthew</a><a class="lastname"
+                            style="color:white; text-decoration: none;" href="#name">Krebs</a></li>
+                </ul>
+
+
+                <!--             
+            <li class="nameswitch" style="color:white; background-color:rgb(74,170,165); line-height: 58px;" class="nav-item active"><a class="name" href="#name">Matthew</a><a class="lastname" href="#name">Krebs</a></li>
+         -->
+
+
+
+            </div>
+            <a class="navbar-brand text-center" href="#"></a>
+            <button class="navbar-toggler d-block d-sm-none" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav navbar-right ml-auto">
+                    <li class="nav-item1 active">
+                        <a class="nav-link1" style="text-decoration:none" href="./index.html">Home
+                        </a>
+                    </li>
+                    <li class="nav-item2">
+                        <a class="nav-link2" style="text-decoration:none" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item3">
+                        <a class="nav-link3" style="text-decoration:none" href="./contact.html">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+
+
+    <div class="container">
+        <div class="d-flex justify-content-center">
+            <div class="col-md-10 col-md-offset-1" style="background-color:white;">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <h1>Contact Us</h1>
+                        <hr style="border:1px solid black;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="d-none d-sm-block col-md-10 col-md-offset-1" style="background-color:white;">
+                <div class="row align-items-center">
+
+
+                    <div class="wrapper">
+                        <img class="faceimg-responsive" src="images/face.jpg" alt="Picture of my face">
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="d-block d-sm-none col-md-10 col-md-offset-1" style="background-color:white;">
+                <div class="row align-items-center">
+
+
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="row order-last col-12 row-centered column-centered">
+                                <img class="img-fluid faceimg-responsive2" src="images/face.jpg"
+                                    alt="Picture of my face">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <br>
+    <br>
+    <footer style="background-color:#666666;  border-top: 8px solid rgb(74,170,165);">
+        <br>
+        <p style="text-align: center;">Copyright 2019</p>
+        <br>
+
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
 </body>
+
+<script>
+
+    $(document).ready(function () {
+        $(".name").css("display", "inline");
+        $(".lastname").css("display", "none");
+    });
+
+
+
+    $("#nameswitch").mouseenter(function () {
+        $(".name").css("display", "none");
+        $(".lastname").css("display", "inline");
+
+    });
+
+    $("#nameswitch").mouseleave(function () {
+        $(".name").css("display", "inline");
+        $(".lastname").css("display", "none");
+
+    });
+
+
+
+    $(document).ready(function () {
+        $(".nav-item1").css("background-color", "white");
+        $(".nav-item1").css("padding", "14px 5px");
+        $(".nav-link1").css("color", "gray");
+
+
+    });
+
+    $(document).ready(function () {
+        $(".nav-item2").css("background-color", "white");
+        $(".nav-item2").css("padding", "14px 5px");
+        $(".nav-link2").css("color", "gray");
+
+
+    });
+
+    $(document).ready(function () {
+        $(".nav-item3").css("background-color", "white");
+        $(".nav-item3").css("padding", "14px 5px");
+        $(".nav-link3").css("color", "gray");
+
+
+    });
+
+
+
+    $(".nav-item1").mouseenter(function () {
+        $(".nav-item1").css("background-color", "rgb(74, 170, 165)");
+        $(".nav-item1").css("padding", "14px 5px");
+        $(".nav-link1").css("color", "white");
+        $(".nav-item2").css("background-color", "white");
+        $(".nav-item2").css("padding", "14px 5px");
+        $(".nav-link2").css("color", "gray");
+        $(".nav-item3").css("background-color", "white");
+        $(".nav-item3").css("padding", "14px 5px");
+        $(".nav-link3").css("color", "gray");
+
+
+    });
+
+
+    $(".nav-item2").mouseenter(function () {
+        $(".nav-item2").css("background-color", "rgb(74, 170, 165)");
+        $(".nav-item2").css("padding", "14px 5px");
+        $(".nav-link2").css("color", "white");
+        $(".nav-item1").css("background-color", "white");
+        $(".nav-item1").css("padding", "14px 5px");
+        $(".nav-link1").css("color", "gray");
+        $(".nav-item3").css("background-color", "white");
+        $(".nav-item3").css("padding", "14px 5px");
+        $(".nav-link3").css("color", "gray");
+
+
+    });
+
+
+    $(".nav-item3").mouseenter(function () {
+        $(".nav-item3").css("background-color", "rgb(74, 170, 165)");
+        $(".nav-item3").css("padding", "14px 5px");
+        $(".nav-link3").css("color", "white");
+        $(".nav-item1").css("background-color", "white");
+        $(".nav-item1").css("padding", "14px 5px");
+        $(".nav-link1").css("color", "gray");
+        $(".nav-item2").css("background-color", "white");
+        $(".nav-item2").css("padding", "14px 5px");
+        $(".nav-link2").css("color", "gray");
+
+
+    });
+
+    $(".nav-item1").mouseleave(function () {
+        $(".nav-item1").css("background-color", "white");
+        $(".nav-item1").css("padding", "14px 5px");
+        $(".nav-link1").css("color", "gray");
+        $(".nav-item2").css("background-color", "white");
+        $(".nav-item2").css("padding", "14px 5px");
+        $(".nav-link2").css("color", "gray");
+        $(".nav-item3").css("background-color", "white");
+        $(".nav-item3").css("padding", "14px 5px");
+        $(".nav-link3").css("color", "gray");
+
+
+    });
+
+
+    $(".nav-item2").mouseleave(function () {
+        $(".nav-item1").css("background-color", "white");
+        $(".nav-item1").css("padding", "14px 5px");
+        $(".nav-link1").css("color", "gray");
+        $(".nav-item2").css("background-color", "white");
+        $(".nav-item2").css("padding", "14px 5px");
+        $(".nav-link2").css("color", "gray");
+        $(".nav-item3").css("background-color", "white");
+        $(".nav-item3").css("padding", "14px 5px");
+        $(".nav-link3").css("color", "gray");
+
+
+    });
+
+
+    $(".nav-item3").mouseleave(function () {
+        $(".nav-item1").css("background-color", "white");
+        $(".nav-item1").css("padding", "14px 5px");
+        $(".nav-link1").css("color", "gray");
+        $(".nav-item2").css("background-color", "white");
+        $(".nav-item2").css("padding", "14px 5px");
+        $(".nav-link2").css("color", "gray");
+        $(".nav-item3").css("background-color", "white");
+        $(".nav-item3").css("padding", "14px 5px");
+        $(".nav-link3").css("color", "gray");
+
+
+    });
+
+
+
+
+
+
+</script>
+
+
+
 </html>
