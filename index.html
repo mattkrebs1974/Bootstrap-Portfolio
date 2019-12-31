@@ -17,6 +17,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Rouge+Script&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 
 </head>
@@ -33,11 +34,19 @@
         
         
         <div class="mr-auto order-0" class= "d-flex align-items-stretch">
-            
-            
-        
+
+            <ul>
+
+
+    <li id="nameswitch" style="color:white"><a class="name" href="#name">Matthew</a><a class="lastname" style="color:white; text-decoration: none;"
+            href="#name">Krebs</a></li></ul>
+    
+
+<!--             
+            <li class="nameswitch" style="color:white; background-color:rgb(74,170,165); line-height: 58px;" class="nav-item active"><a class="name" href="#name">Matthew</a><a class="lastname" href="#name">Krebs</a></li>
+         -->
              
-            <a class="navbar-brand ml-auto" style="background-color:rgb(74,170,165); line-height: 58px; margin-top:-9px; padding: 0 20px 0 20px; color:white;" class="nav-item active" href="#">Matthew Krebs</a>
+           
            
         </div>
         <a class="navbar-brand text-center" href="#"></a>
@@ -47,21 +56,22 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="nav navbar-nav navbar-right ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="./index.html">Home
+                <li class="nav-item1 active">
+                    <a class="nav-link1" style="text-decoration:none" href="./index.html">Home
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./contact.html">Portfolio</a>
+                <li class="nav-item2">
+                    <a class="nav-link2" style="text-decoration:none" href="./contact.html">Portfolio</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./contact.html">Contact</a>
+                <li class="nav-item3">
+                    <a class="nav-link3" style="text-decoration:none" href="./contact.html">Contact</a>
                 </li>
 
             </ul>
         </div>
     </div>
 </nav>
+
 <conatainer>
 
 
@@ -70,8 +80,163 @@
 
 </conatainer>
 
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
 
 </body>
+
+<script>
+  
+        $(document).ready(function () {
+             $(".name").css("display", "inline");
+            $(".lastname").css("display", "none");
+             });
+
+
+
+   $("#nameswitch").mouseenter(function () {
+        $(".name").css("display", "none");
+         $(".lastname").css("display", "inline");
+        
+    });
+
+ $("#nameswitch").mouseleave(function () {
+        $(".name").css("display", "inline");
+         $(".lastname").css("display", "none");
+        
+    });
+
+
+
+    $(document).ready(function () {
+        $(".nav-item1").css("background-color", "white");
+        $(".nav-item1").css("padding", "14px 5px");
+        $(".nav-link1").css("color", "gray");
+
+
+    });
+
+    $(document).ready(function () {
+        $(".nav-item2").css("background-color", "white");
+        $(".nav-item2").css("padding", "14px 5px");
+        $(".nav-link2").css("color", "gray");
+
+
+    });
+
+    $(document).ready(function () {
+        $(".nav-item3").css("background-color", "white");
+        $(".nav-item3").css("padding", "14px 5px");
+        $(".nav-link3").css("color", "gray");
+
+
+    });
+
+
+
+    $(".nav-item1").mouseenter(function () {
+        $(".nav-item1").css("background-color", "rgb(74, 170, 165)");
+        $(".nav-item1").css("padding", "14px 5px");
+        $(".nav-link1").css("color", "white");
+         $(".nav-item2").css("background-color", "white");
+        $(".nav-item2").css("padding", "14px 5px");
+        $(".nav-link2").css("color", "gray");
+         $(".nav-item3").css("background-color", "white");
+        $(".nav-item3").css("padding", "14px 5px");
+        $(".nav-link3").css("color", "gray");
+        
+
+    });
+
+
+    $(".nav-item2").mouseenter(function () {
+        $(".nav-item2").css("background-color", "rgb(74, 170, 165)");
+        $(".nav-item2").css("padding", "14px 5px");
+        $(".nav-link2").css("color", "white");
+        $(".nav-item1").css("background-color", "white");
+        $(".nav-item1").css("padding", "14px 5px");
+        $(".nav-link1").css("color", "gray");
+        $(".nav-item3").css("background-color", "white");
+        $(".nav-item3").css("padding", "14px 5px");
+        $(".nav-link3").css("color", "gray");
+
+
+    });
+
+
+    $(".nav-item3").mouseenter(function () {
+        $(".nav-item3").css("background-color", "rgb(74, 170, 165)");
+        $(".nav-item3").css("padding", "14px 5px");
+        $(".nav-link3").css("color", "white");
+        $(".nav-item1").css("background-color", "white");
+        $(".nav-item1").css("padding", "14px 5px");
+        $(".nav-link1").css("color", "gray");
+        $(".nav-item2").css("background-color", "white");
+        $(".nav-item2").css("padding", "14px 5px");
+        $(".nav-link2").css("color", "gray");
+
+
+    });
+
+    $(".nav-item1").mouseleave(function () {
+        $(".nav-item1").css("background-color", "white");
+        $(".nav-item1").css("padding", "14px 5px");
+        $(".nav-link1").css("color", "gray");
+        $(".nav-item2").css("background-color", "white");
+        $(".nav-item2").css("padding", "14px 5px");
+        $(".nav-link2").css("color", "gray");
+        $(".nav-item3").css("background-color", "white");
+        $(".nav-item3").css("padding", "14px 5px");
+        $(".nav-link3").css("color", "gray");
+
+
+    });
+
+
+    $(".nav-item2").mouseleave(function () {
+        $(".nav-item1").css("background-color", "white");
+        $(".nav-item1").css("padding", "14px 5px");
+        $(".nav-link1").css("color", "gray");
+        $(".nav-item2").css("background-color", "white");
+        $(".nav-item2").css("padding", "14px 5px");
+        $(".nav-link2").css("color", "gray");
+        $(".nav-item3").css("background-color", "white");
+        $(".nav-item3").css("padding", "14px 5px");
+        $(".nav-link3").css("color", "gray");
+
+
+    });
+
+
+    $(".nav-item3").mouseleave(function () {
+        $(".nav-item1").css("background-color", "white");
+        $(".nav-item1").css("padding", "14px 5px");
+        $(".nav-link1").css("color", "gray");
+        $(".nav-item2").css("background-color", "white");
+        $(".nav-item2").css("padding", "14px 5px");
+        $(".nav-link2").css("color", "gray");
+        $(".nav-item3").css("background-color", "white");
+        $(".nav-item3").css("padding", "14px 5px");
+        $(".nav-link3").css("color", "gray");
+
+
+    });
+
+
+
+
+
+
+</script>
+
+
+
 </html>
