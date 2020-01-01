@@ -148,7 +148,7 @@
                 <ul>
 
 
-                    <li id="nameswitch" style="color:white"><a class="name" href="#name">Matthew</a><a class="lastname"
+                    <li id="nameswitch" style="color:white"><a id="name" href="#name">Matthew</a><a id="lastname"
                             style="color:white; text-decoration: none;" href="#name">Krebs</a></li>
                 </ul>
 
@@ -186,7 +186,7 @@
             <div class="col-md-10 col-md-offset-1" style="background-color:white;">
                 <div class="row align-items-center">
                     <div class="col">
-                        <h1 style="text-indent: 20px;">Portfolio</h1>
+                        <h1 id="heading3" style="text-indent: 20px;">Portfolio</h1>
                         <hr style="border:1px solid black;" />
                     </div>
                 </div>
@@ -289,21 +289,21 @@
     <script>
 
         $(document).ready(function () {
-            $(".name").css("display", "inline");
-            $(".lastname").css("display", "none");
+            $("#name").css("display", "inline");
+            $("#lastname").css("display", "none");
         });
 
 
 
         $("#nameswitch").mouseenter(function () {
-            $(".name").css("display", "none");
-            $(".lastname").css("display", "inline");
+            $("#name").css("display", "none");
+            $("#lastname").css("display", "inline");
 
         });
 
         $("#nameswitch").mouseleave(function () {
-            $(".name").css("display", "inline");
-            $(".lastname").css("display", "none");
+            $("#name").css("display", "inline");
+            $("#lastname").css("display", "none");
 
         });
 

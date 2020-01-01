@@ -11,7 +11,7 @@ body    {
 background-color:#dddddd;
 }
 
-.nameswitch {
+#nameswitch {
 
 display:block;
 
@@ -19,7 +19,7 @@ display:block;
 
 }
 
-.name {
+#name {
 
 background-color: #007A33;
 color:white;
@@ -31,7 +31,7 @@ top:10px;
 
 }
 
-.lastname {
+#lastname {
 background-color: #007A33;
 color:white;
 font-family: 'Rouge Script', cursive;
@@ -190,3 +190,32 @@ img {
     color:white;
     position:left;
 }
+
+
+
+#heading1 {
+  animation: fadein 3s;
+}
+@keyframes fadein {
+  from { text-indent: 340px}
+  to   { text-indent: 20px}
+}
+
+
+#heading2 {
+  animation: fadein 3s;
+}
+@keyframes fadein {
+  from { text-indent: 340px}
+  to   { text-indent: 20px}
+}
+
+
+#heading3 {
+  animation: fadein 3s;
+}
+@keyframes fadein {
+  from { text-indent: 340px}
+  to   { text-indent: 20px}
+}
+
