@@ -193,13 +193,6 @@ img {
 
 
 
-#heading1 {
-  animation: fadein 3s;
-}
-@keyframes fadein {
-  from { text-indent: 340px}
-  to   { text-indent: 20px}
-}
 
 
 #heading2 {
@@ -210,12 +203,4 @@ img {
   to   { text-indent: 20px}
 }
 
-
-#heading3 {
-  animation: fadein 3s;
-}
-@keyframes fadein {
-  from { text-indent: 340px}
-  to   { text-indent: 20px}
-}
 
