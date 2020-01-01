@@ -60,14 +60,14 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="nav navbar-nav navbar-right ml-auto">
-                    <li class="nav-item1 active">
+                    <li class="nav-item1">
                         <a class="nav-link1" style="text-decoration:none" href="./index.html">Home
                         </a>
                     </li>
                     <li class="nav-item2">
                         <a class="nav-link2" style="text-decoration:none" href="./portfolio.html">Portfolio</a>
                     </li>
-                    <li class="nav-item3">
+                    <li class="nav-item3 active">
                         <a class="nav-link3" style="text-decoration:none" href="./contact.html">Contact</a>
                     </li>
 
@@ -80,46 +80,100 @@
 
     <div class="container">
         <div class="d-flex justify-content-center">
-            <div class="col-md-10 col-md-offset-1" style="background-color:white;">
+            <div class="col-md-10" style="background-color:white;">
                 <div class="row align-items-center">
                     <div class="col">
-                        <h1>Contact Us</h1>
+                        <h1 style="text-indent: 20px;">Contact Us</h1>
                         <hr style="border:1px solid black;" />
                     </div>
                 </div>
             </div>
         </div>
         <div class="d-flex justify-content-center">
-            <div class="d-none d-sm-block col-md-10 col-md-offset-1" style="background-color:white;">
+            <div class="col-md-10" style="background-color:white;">
                 <div class="row align-items-center">
-
-
-                    <div class="wrapper">
-                        <img class="faceimg-responsive" src="images/face.jpg" alt="Picture of my face">
-
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-        <div class="d-flex justify-content-center">
-            <div class="d-block d-sm-none col-md-10 col-md-offset-1" style="background-color:white;">
-                <div class="row align-items-center">
-
-
-
-                    <div class="container">
-                        <div class="row">
-                            <div class="row order-last col-12 row-centered column-centered">
-                                <img class="img-fluid faceimg-responsive2" src="images/face.jpg"
-                                    alt="Picture of my face">
+                    <div class="conatiner-fluid">
+                        <div class="row row-content">
+                            <div class="col-12 offset-1">
+                                <h3>Send us your Feedback</h3>
                             </div>
+                            <div class="col-sm-10 offset-1 offset-lg-2 offset-xl-3">
+                                <form style="margin:20px 20px 20px 0">
+                                    <div class="form group row" style="padding:5px">
+                                        <label for="firstname" class="col-form-label">First Name</label>
+                                        <div class="col-12">
+                                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+                                        </div>
+                                    </div>
+                                    <div class="form group row" style="padding:5px">
+                                        <label for="lastname" class="col-form-label">Last Name</label>
+                                        <div class="col-12">
+                                            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                                        </div>
+                                    </div>
+                                    <div class="form group row" style="padding:5px">
+                                        <label for="telnum" class="col-form-label">Contact Tel.</label>
+                                        <div class="col-12">
+                                            <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="xxx-xxx-xxxx">
+                                        </div>
+                                    </div>
+                                    <div class="form group row" style="padding:5px">
+                                        <label for="emailid" class="col-form-label">Email</label>
+                                        <div class="col-md-12">
+                                            <input type="email" class="form-control" id="emailid" name="emailid" placeholder="email">
+                                        </div>
+                                    </div>
+                                    <div class="form group row" style="padding:5px">
+                                        <div class="col-md-6 offset-md-2">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" name="approve" id="approve" value="">
+                                                <label class="form-check-label" for="approve">
+                                                    <strong>May we contact you?</strong>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 offset-md-1">
+                                            <select class="form-control">
+                                                <option>Tel.</option>
+                                                <option>Email</option>
+                                            </select>
+                        
+                        
+                                        </div>
+                                    </div>
+                                    <div class="form group row" style="padding:5px">
+                                        <label for="feedback" class="col-form-label">Your Feedback</label>
+                                        <div class="col-md-12">
+                                            <textarea class="form-control" id="feedback" name="feedback" rows="12"></textarea>
+                                        </div>
+                                    </div>
+<br>
+                                    <div class="container">
+                                        <div class="container-fluid">
+                                        <div class="form-group row">
+                                            <div class="col-12">
+                                                <div class="d-flex justify-content-center">
+                                                <button type="submit" class="btn btn-primary">
+                                                    Send Feedback
+                                                </button>
+                                        
+                                            </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            
 
+
+                            </div>
+                            </div>
+                        
+                        
+                        
                         </div>
-                    </div>
                 </div>
             </div>
+
         </div>
 
     </div>
@@ -127,7 +181,7 @@
 
 
     <br>
-    <br>
+ <br>
     <footer style="background-color:#666666;  border-top: 8px solid rgb(74,170,165);">
         <br>
         <p style="text-align: center;">Copyright 2019</p>
