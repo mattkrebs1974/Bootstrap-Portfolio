@@ -91,7 +91,7 @@
         
         
                     <div class="wrapper">
-                        <img class="faceimg-responsive" src="images/face.jpg" alt="Picture of my face">
+                        <img class="faceimg-responsive" src="images/face.jpg" alt="Picture of my face"  data-toggle="tooltip" data-html="true"  title="'Go Celtics!'">
                         <p class="text-justify" style="padding: 0 15px 0 15px">
         
                             My name is Matthew Krebs and I am a web developer. Please try to decode the rest of
@@ -167,7 +167,7 @@
                         <div class="container">
                        <div class="row">
                         <div class="row order-last col-12 row-centered column-centered">
-                        <img class="img-fluid faceimg-responsive2" src="images/face.jpg" alt="Picture of my face">
+                        <img class="img-fluid faceimg-responsive2" src="images/face.jpg" alt="Picture of my face"  data-toggle="tooltip" data-html="true"  title="'Go Celtics!'">
                         </div>
                         <div class="row order-first">
                         <p style="padding: 0 40px 0 40px" class="text-justify">
@@ -317,7 +317,7 @@
 
 
     $(".nav-item1").mouseenter(function () {
-        $(".nav-item1").css("background-color", "rgb(74, 170, 165)");
+        $(".nav-item1").css("background-color", "#007A33");
         $(".nav-item1").css("padding", "14px 5px");
         $(".nav-link1").css("color", "white");
          $(".nav-item2").css("background-color", "white");
@@ -332,7 +332,7 @@
 
 
     $(".nav-item2").mouseenter(function () {
-        $(".nav-item2").css("background-color", "rgb(74, 170, 165)");
+        $(".nav-item2").css("background-color", "#007A33");
         $(".nav-item2").css("padding", "14px 5px");
         $(".nav-link2").css("color", "white");
         $(".nav-item1").css("background-color", "white");
@@ -347,7 +347,7 @@
 
 
     $(".nav-item3").mouseenter(function () {
-        $(".nav-item3").css("background-color", "rgb(74, 170, 165)");
+        $(".nav-item3").css("background-color", "#007A33");
         $(".nav-item3").css("padding", "14px 5px");
         $(".nav-link3").css("color", "white");
         $(".nav-item1").css("background-color", "white");
@@ -410,7 +410,11 @@
 
 
 </script>
-
+<script>
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
 
 
 </html>
