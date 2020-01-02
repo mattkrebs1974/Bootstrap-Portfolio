@@ -199,7 +199,7 @@ img {
   animation: fadein 3s;
 }
 @keyframes fadein {
-  from { text-indent: 340px}
+  from { text-indent: 250px}
   to   { text-indent: 20px}
 }
 
