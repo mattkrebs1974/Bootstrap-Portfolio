@@ -148,7 +148,7 @@
                 <ul>
 
 
-                    <li id="nameswitch" style="color:white"><a id="name" href="#name">Matthew</a><a id="lastname"
+                    <li id="nameswitch" style="color:white"><a class="name" href="#name">Matthew</a><a class="lastname"
                             style="color:white; text-decoration: none;" href="#name">Krebs</a></li>
                 </ul>
 
@@ -289,21 +289,21 @@
     <script>
 
         $(document).ready(function () {
-            $("#name").css("display", "inline");
-            $("#lastname").css("display", "none");
+            $(".name").css("display", "inline");
+            $(".lastname").css("display", "none");
         });
 
 
 
         $("#nameswitch").mouseenter(function () {
-            $("#name").css("display", "none");
-            $("#lastname").css("display", "inline");
+            $(".name").css("display", "none");
+            $(".lastname").css("display", "inline");
 
         });
 
         $("#nameswitch").mouseleave(function () {
-            $("#name").css("display", "inline");
-            $("#lastname").css("display", "none");
+            $(".name").css("display", "inline");
+            $(".lastname").css("display", "none");
 
         });
 

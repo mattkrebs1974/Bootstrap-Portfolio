@@ -19,7 +19,7 @@ display:block;
 
 }
 
-#name {
+.name {
 
 background-color: #007A33;
 color:white;
@@ -31,7 +31,7 @@ top:10px;
 
 }
 
-#lastname {
+.lastname {
 background-color: #007A33;
 color:white;
 font-family: 'Rouge Script', cursive;
